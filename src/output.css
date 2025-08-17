@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-purple-100: oklch(94.6% 0.033 307.174);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-purple-600: oklch(55.8% 0.288 302.321);
@@ -231,8 +233,14 @@
   .ml-30 {
     margin-left: calc(var(--spacing) * 30);
   }
+  .ml-60 {
+    margin-left: calc(var(--spacing) * 60);
+  }
   .ml-\[0px\] {
     margin-left: 0px;
+  }
+  .ml-\[5\] {
+    margin-left: 5;
   }
   .ml-\[10px\] {
     margin-left: 10px;
@@ -240,8 +248,20 @@
   .ml-\[20px\] {
     margin-left: 20px;
   }
+  .ml-\[30\%\] {
+    margin-left: 30%;
+  }
   .ml-\[30px\] {
     margin-left: 30px;
+  }
+  .ml-\[40\%\] {
+    margin-left: 40%;
+  }
+  .ml-\[50\%\] {
+    margin-left: 50%;
+  }
+  .ml-\[50\] {
+    margin-left: 50;
   }
   .ml-\[50px\] {
     margin-left: 50px;
@@ -258,11 +278,23 @@
   .table {
     display: table;
   }
+  .h-\[2\] {
+    height: 2;
+  }
   .h-\[20px\] {
     height: 20px;
   }
   .h-\[30px\] {
     height: 30px;
+  }
+  .h-\[50\] {
+    height: 50;
+  }
+  .h-\[50px\] {
+    height: 50px;
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-\[20px\] {
     width: 20px;
@@ -288,17 +320,26 @@
   .w-\[100px\] {
     width: 100px;
   }
+  .w-\[200p\] {
+    width: 200p;
+  }
   .w-\[200px\] {
     width: 200px;
   }
   .w-\[250px\] {
     width: 250px;
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-\[500px\] {
     width: 500px;
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -351,8 +392,14 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
   .bg-amber-100 {
     background-color: var(--color-amber-100);
+  }
+  .bg-purple-100 {
+    background-color: var(--color-purple-100);
   }
   .bg-purple-400 {
     background-color: var(--color-purple-400);
@@ -366,11 +413,23 @@
   .bg-purple-700 {
     background-color: var(--color-purple-700);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
   }
   .pt-\[5px\] {
     padding-top: 5px;
@@ -378,8 +437,20 @@
   .pt-\[20px\] {
     padding-top: 20px;
   }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-30 {
+    padding-bottom: calc(var(--spacing) * 30);
   }
   .pb-\[5px\] {
     padding-bottom: 5px;
@@ -392,6 +463,9 @@
   }
   .pb-\[20px\] {
     padding-bottom: 20px;
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
   }
   .text-center {
     text-align: center;
@@ -428,6 +502,20 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:border-white {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
   }
 }
 @property --tw-border-style {
