@@ -189,6 +189,12 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mr-10 {
+    margin-right: calc(var(--spacing) * 10);
+  }
+  .mr-60 {
+    margin-right: calc(var(--spacing) * 60);
+  }
   .mr-\[10px\] {
     margin-right: 10px;
   }
@@ -207,8 +213,23 @@
   .mr-\[100px\] {
     margin-right: 100px;
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
+  }
+  .ml-15 {
+    margin-left: calc(var(--spacing) * 15);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
   }
   .ml-\[0px\] {
     margin-left: 0px;
