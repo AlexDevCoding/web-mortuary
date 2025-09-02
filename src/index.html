@@ -1,25 +1,313 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funeraria El Rosario</title>
+<link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
-<body class="w-[70%] bg-amber-100 m-auto font-mono">
-  <header class="bg-purple-700 flex justify-center text-center pb-[5px] pt-[5px] gap-10">
-        <img src="img/facebook-logo.png" alt="" width="20px" class="">
 
-        <img src="img/Instagram_icon.png" alt=""  width="20px">
+<body class="bg-gray-50">
 
-        <img src="img/email.png" alt=""  width="20px">
+  <header class="bg-purple-600 text-white">
 
-        <img src="img/telefono.png" alt=""  width="20px">
-    </header>
-<!---Bara de Navegacion-->
-    <nav class="bg-purple-600 pb-[20px] pt-[20px] flex justify-center m-auto  gap-10">
-        <h1 class="mr-[100px] font-semibold">DESEMBARCO DEL REY</h1>
+    <div class="bg-purple-700 py-2">
+      <div class="container mx-auto px-4 flex justify-end space-x-4">
+        <a href="#" class="text-white hover:text-purple-200"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white hover:text-purple-200"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white hover:text-purple-200"><i class="fas fa-phone"></i></a>
+        <a href="#" class="text-white hover:text-purple-200"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
 
-        <a href="" class="border-solid border-t-2 border-black hover:text-white hover:border-white">INCIO</a>
+
+
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-xl font-bold">
+          FUNERARIA<br />
+          <span class="text-sm">EL ROSARIO</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-purple-200 font-[inter]">INICIO</a>
+          <a href="#" class="hover:text-purple-200 font-[inter]">SOBRE NOSOTROS</a>
+          <a href="#" class="hover:text-purple-200 font-[inter]">SERVICIOS</a>
+          <a href="#" class="hover:text-purple-200 font-[inter]">CONTACTO</a>
+        </div>
+        <button class="bg-white text-purple-600 px-4 py-2 rounded hover:bg-gray-100 font-[inter]">
+          registrate
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="inicio" class="relative py-20 px-6">
+
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('img/graveyard-603160_1920.jpg')"></div>
+
+ <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center">
+   
+      <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+        Con Respeto y Dignidad
+      </h2>
+      <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
+        Acompañamos a las familias en sus momentos más difíciles con
+        profesionalismo, comprensión y el cuidado que merecen sus seres
+        queridos.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button
+          class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105">
+          Contactar Ahora
+        </button>
+        <button
+          class="bg-white hover:bg-gray-50 text-purple-600 font-medium py-3 px-8 rounded-lg shadow-lg border-2 border-purple-600 transition-all duration-300 transform hover:scale-105">
+          Ver Servicios
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-purple-500 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="bg-white p-8 rounded"></div>
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Vas y conoces</h2>
+          <h3 class="text-xl mb-4">Llevamos más de XX años de Experiencia</h3>
+          <p class="text-purple-100">
+            Contamos Con el personal capacitado para brindar el mejor servicio
+            funerario en el momento más difícil, siempre con el respeto y
+            cariño que se merecen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+        Nuestros Servicios
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+   
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="p-1 bg-purple-200"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Servicio Básico
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Servicios esenciales para el descanso eterno
+            </p>
+            <p class="text-3xl font-bold text-gray-800 mb-6">$50</p>
+            <ul class="text-sm text-gray-600 mb-6 space-y-2">
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Traslado de personal
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Traslado del fallecido
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Preparación y arreglo normal
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Ataúd de madera
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Servicio de Cementerio
+              </li>
+            </ul>
+          </div>
+          <div class="p-4">
+            <button
+              class="w-full bg-purple-500 text-white rounded-full px-4 py-2 hover:bg-purple-700 focus:outline-none transition-colors">
+              Seleccionar Plan
+            </button>
+          </div>
+        </div>
+
+     
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="p-1 bg-purple-400"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Servicio Normal
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Servicios completos con mayor comodidad
+            </p>
+            <p class="text-3xl font-bold text-gray-800 mb-6">$100</p>
+            <ul class="text-sm text-gray-600 mb-6 space-y-2">
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Todo lo del servicio básico
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Ataúd mejorado
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Flores incluidas
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Sala de velación
+              </li>
+            </ul>
+          </div>
+          <div class="p-4">
+            <button
+              class="w-full bg-purple-500 text-white rounded-full px-4 py-2 hover:bg-purple-700 focus:outline-none transition-colors">
+              Seleccionar Plan
+            </button>
+          </div>
+        </div>
+
+    
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+          <div class="p-1 bg-purple-600"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Servicio Dorado
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Servicio premium con todas las comodidades
+            </p>
+            <p class="text-3xl font-bold text-gray-800 mb-6">$200</p>
+            <ul class="text-sm text-gray-600 mb-6 space-y-2">
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Todo lo del servicio normal
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Ataúd de lujo
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Arreglos florales premium
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Sala VIP de velación
+              </li>
+              <li class="flex items-start">
+                <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Servicio de catering
+              </li>
+            </ul>
+          </div>
+          <div class="p-4">
+            <button
+              class="w-full bg-purple-500 text-white rounded-full px-4 py-2 hover:bg-purple-700 focus:outline-none transition-colors">
+              Seleccionar Plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Formularios</h2>
+        <p class="text-gray-600">
+          Formularios para facilitar los trámites y planificación de
+          servicios.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Solicitud de Servicios Form -->
+        <div class="bg-gray-100 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">
+            Solicitud de Servicios
+          </h3>
+          <p class="text-gray-600 mb-6 text-sm">
+            Complete este formulario para solicitar nuestros servicios
+            funerarios.
+          </p>
+
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Nombre del difunto</label>
+              <input type="text" placeholder="Nombre completo"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Fecha de fallecimiento</label>
+                <input type="date"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Lugar</label>
+                <input type="text" placeholder="Ciudad"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
 
         <a href="#Info"class="border-solid border-t-2 border-black hover:text-white hover:border-white ">SOBRE NOSOTROS</a>
 
@@ -47,11 +335,149 @@
               <p class="mb-3">Ven y Conocenos</p>
               <h3 class="mb-3 font-medium text-xl">llevamos mas de XX Años de Experiencia</h3>
               <p class="w-[250px] text-sm">Contamos con el Pernosal Capacitado y con la Dedicacion al trabajo ofreciendo servicios personalizados dando asi una Experiencia unica a cada cliente</p>
+
             </div>
 
             <div>
-              <img src="img/WhatsApp Image 2025-08-12 at 1.15.34 PM.jpeg" alt="" width="500px">
+              <label class="block text-sm font-medium text-gray-700 mb-1">Tipo de servicio</label>
+              <select
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <option>Seleccione un servicio</option>
+                <option>Servicio Básico</option>
+                <option>Servicio Normal</option>
+                <option>Servicio Dorado</option>
+              </select>
             </div>
+
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Contacto familiar</label>
+              <input type="text" placeholder="Nombre y teléfono"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Observaciones especiales</label>
+              <textarea rows="3" placeholder="Detalles adicionales, tradiciones familiares, etc."
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors">
+              Enviar Solicitud
+            </button>
+          </form>
+        </div>
+
+ 
+        <div class="bg-gray-100 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">
+            Plan de Previsión
+          </h3>
+          <p class="text-gray-600 mb-6 text-sm">
+            Planifique con anticipación para garantizar tranquilidad a su
+            familia.
+          </p>
+
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                <input type="text" placeholder="Su nombre completo"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Edad</label>
+                <input type="number" placeholder="Su edad"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Dirección</label>
+              <input type="text" placeholder="Su dirección completa"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input type="tel" placeholder="Su teléfono"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" placeholder="Su email"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Tipo de plan</label>
+              <select
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+     
+                <option>Plan Básico</option>
+                <option>Plan Normal</option>
+                <option>Plan Dorado</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Beneficiarios</label>
+              <textarea rows="3" placeholder="Nombres y relación familiar de los beneficiarios"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Preferencias especiales</label>
+              <textarea rows="2" placeholder="Ceremonias, música, flores, etc."
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors">
+              Solicitar Plan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-purple-500 text-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">
+        CONTACTA CON NUESTRO SERVICIO AL CLIENTE
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h3 class="font-bold mb-4">Desarrolladores</h3>
+          <div class="space-y-2">
+            <div class="flex items-center justify-center space-x-2">
+              <a href="https://www.creative-tim.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Alexis Castillo</span></a>
+            </div>
+            <div class="flex items-center justify-center space-x-2">
+              <a href="https://www.creative-tim.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Josue Henriquez</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">Empresa</h3>
+          <div class="flex items-center justify-center space-x-2 mb-4">
+            <i class="fas fa-phone"></i>
+            <span>+58 4243121451</span>
+          </div>
+          <div class="flex items-center justify-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>ejemplo@gmail.com</span>
+          </div>
 
         </article>
 <!---Servicios-->
@@ -75,10 +501,50 @@
         <div>
           
 
+
         </div>
 
+        <div>
+          <h3 class="font-bold mb-4">Ubicación</h3>
+     
+        
+
+     
+          <div class="relative w-full h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg bg-white">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49826.39942264114!2d-66.85560891828953!3d10.454623951454547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5f59c5d7b6ab%3A0x75f038d9d4d29cae!2sLos%20Jardines%20(L3)!5e0!3m2!1ses-419!2snl!4v1755988302215!5m2!1ses-419!2snl"
+              class="absolute inset-0 w-full h-full border-0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Funeraria El Rosario">
+            </iframe>
+          </div>
+
+       
+          <div class="mt-4 text-sm text-purple-100">
+            <p>Los Jardines, Caracas</p>
+            <p>Venezuela</p>
+          </div>
+
+     
+          <a href="https://www.google.com/maps/place/Los+Jardines+(L3)/@10.4546239,-66.8556089,15z/data=!4m6!3m5!1s0x8c2a5f59c5d7b6ab:0x75f038d9d4d29cae!8m2!3d10.4546239!4d-66.8556089!16s%2Fg%2F11c5p8y8qy"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block mt-3 bg-white text-purple-600 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors text-sm font-medium">
+            Ver en Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-    </footer>
+  <script>
+  //  este codigo es para el menu responsive
+    document.addEventListener("DOMContentLoaded", function () {
+   
+    });
+  </script>
 </body>
+
 </html>
